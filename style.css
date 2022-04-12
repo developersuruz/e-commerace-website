@@ -1,0 +1,604 @@
+/*Default CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fixed-width{
+    width: 1240px;
+    margin: auto;
+}
+.img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+/*Header Float CSS*/
+.header{
+    background-color: #1abc9c;
+    
+}
+
+/* Header Logo CSS */
+.header-logo{
+    float: left;
+    width: 15%;
+    margin-left: 40px;
+}
+
+.header-logo a{
+    
+    display: inline-block;
+    font-size: 5px;
+}
+
+.header-logo img {
+    width: 70%; 
+    height: auto;
+    border-radius: 5px; 
+    margin-top: 4px;
+} 
+
+/* Header Menu CSS */
+.header-menu{
+    float: right;
+    width: 80%;
+}
+
+.Primary-menu{}
+
+.Primary-menu ul{
+    text-align: right;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.Primary-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.Primary-menu ul li a{
+    display: block;
+    color: #000;
+    font-size: 15px;
+    padding: 0px 15px;
+    text-decoration: none;
+    line-height: 40px;
+    border-right: 1px solid #fff; 
+    transition: .5s;
+    width: 100px;
+    
+}
+
+.Primary-menu ul li:hover > a{
+    background-color: red;
+    color: white;
+}
+
+/*DropDown Menu*/
+.Primary-menu ul li{
+    position: relative;
+}
+.Primary-menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    background: #f3efef;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaley(0);
+}
+
+.Primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+/* Social Icon CSS */
+.header-right1{
+    float: right;
+    width: 15%;
+}
+.header-right1 .header-social{
+    list-style: none;
+    text-align: right;
+}
+.header-right1 .header-social .social-icon{}
+.header-right .header-social .social-icon ul{
+    display: inline-block;
+}
+.header-right1 .header-social .social-icon ul li{
+    display: inline-block;
+}
+.header-right1 .header-social .social-icon ul li a{
+    color: #f6f4f4;
+    text-align: right;
+    font-size: 30px;
+    line-height: 36px;
+    padding-left: 15px;
+}
+
+/* Contact CSS */
+.header-right2{
+    float: right;
+    width: 5%;
+}
+
+.header-right2 .header-contact{ } 
+
+.header-right2 .header-contact a{
+    border: 2px solid #d511b5;
+    padding: 6px 15px;
+    margin-top: 0px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header-right2 .header-contact a:hover{
+    background-color:#2ecc71;
+    transition: .5s;
+    color: #000;
+}
+
+
+
+/*Banner Section*/
+.banner {
+   
+}
+
+.banner-caption{
+
+}
+.banner-caption img{
+    display: inline-block;
+    width: 100%;
+    margin: auto; 
+}
+
+
+/* feature-products */
+.feature-products{
+    display: inline-block;
+}
+
+.feature-products .feature-items{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.feature-products .feature-items img{
+    display: inline-block;
+    width: 236px;
+    box-shadow: 0px 0px 15px 6px #b0c5d7;
+    margin: 10px;
+}
+
+
+/* Our Products */
+.product-section{}
+
+.product-section .our-products{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-section .our-products h1{
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+
+.products-items{
+    width: 275px;
+    height: 355px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 28px; 
+    text-align: center; 
+    display: inline-block;
+    cursor: pointer;
+}
+
+.products-items img{
+    width: 200px;
+}
+
+.products-items h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px;
+    color: #000;
+}
+.products-items .s-price{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1abc9c;
+    margin-right: 10px;
+}
+.products-items .r-price{
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+}
+.products-items .add-to-card{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #1abc9c;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.product-section .our-products img{
+    display: inline-block;
+    width: 180px;
+    margin: 10px;
+} 
+
+/* upcoming products */
+.upcoming-products{}
+.upcoming-products h1{text-align: center;font-size: 45px;margin: 60px;}
+.upcoming-products .left-content{
+    width: 45%;
+    display: inline-block;
+}
+.upcoming-products .left-content img{
+    width: 420px;
+    margin-left: auto;
+    display: block;
+}
+.upcoming-products .right-content{
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 60px;
+}
+.upcoming-products .right-content h2{ 
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.upcoming-products .right-content p{
+    font-size: 15px;
+    font-weight: 400;}
+
+
+/*Service section*/ 
+.service-section{}
+.section-title{}
+.section-title h3 img{
+    font-size: 50px;
+    margin: 15px;
+    font-weight: 500;
+    border-radius: 50%;
+    height: 85px;
+}
+.section-title h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.section-title p {
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 200;
+    border-bottom: 1px solid #000;
+}
+
+/*Services Items*/
+.services-items{
+    margin-top: 60px;
+} 
+.service-box {
+    float: left;
+    width: 31.3%;
+    box-shadow: 7px 7px 25px 0 rgb(0 0 0 / 50%);
+    margin-right: 2%;
+    margin-bottom: 35px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.s-icon{
+    float: left;
+    width: 50px;
+    min-height: 100px;
+    font-size: 45px;
+    color: rebeccapurple;
+    margin-right: 10px;
+}
+.s-icon span{}
+.s-icon span img {
+    border-radius: 10px;
+    height: 64px;
+}
+.s-content{
+    margin-top: 8px;
+    text-align: justify;
+}
+.s-content h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 21px;
+    text-align: center;
+    color: #2ecc71;
+}
+.s-content p{
+    color: #000;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+/*About Section*/
+.about{
+    margin-top: 20px;
+}
+.suruz{
+    text-align: left;
+}
+.about{}
+.Suruz1 img{
+    width: 149px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 56px;
+}
+
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about p{
+    max-width: 100%;
+    margin: auto;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about-left-suruz{
+    float: left;
+    width: 33%;
+}
+.about-left-about{
+    float: left;
+    width: 33%;
+}
+.about-left-bdflag{
+    float: left;
+    width: 33%;
+}
+
+
+/*Service Section*/
+.service{
+    margin-top: 60px;
+}
+.service-item{
+    float: left;
+    width: 31.3%;
+    border: 1px solid #ddd;
+    padding: 25px 10px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.service-item span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgba(7, 123, 201, 0.6);
+    color: #fff;
+    margin: auto;
+    font-size: 35px;
+    line-height: 60px;
+    border-radius: 20px 0 20px 0;
+}
+.service-item h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.service-item p{
+    font-size: 17.4px;
+    text-align: justify;
+}
+/*Table Section*/
+.form{
+    margin-bottom: 30px;
+}
+
+.form-left-table{
+    float: left;
+    width: 50%;
+}
+.form-left-bdflag{
+    float: right;
+    width: 50%;
+}
+.table {
+    font-family: The 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 250;
+    height: 100;
+    background-color: white;
+    margin: 100px;
+      }
+.table1 {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+Td, th:nth-child(even) {
+    border-color: brown;
+    font-size: 20
+}
+tr:nth-child(even){
+    background-color: aqua
+}
+
+/*Bangladesh Flag*/
+
+.bdflag{
+    color: #ddd;
+    height: 100px;
+    width: 250px;
+    background: green;
+    text-align: center; 
+    padding: 30px;
+   display: inline-block;
+  }
+  .red{
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+/*Blog Section*/
+.blog-container{
+    margin: 60px 0;
+
+}
+.blog-item{
+    margin-bottom: 30px;
+}
+
+.blog-item img{
+    float: left;
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.blog-item p{
+    font-size: 16px;
+    text-align: justify;
+}
+.blog-left-content{
+    float: left;
+    width: 70%;
+}
+.blog-left-notification{
+    float: right;
+    width: 25%;
+}
+
+/*Blog Notification*/
+.blog-left-notification{}
+
+.blog-left-notification h2 {
+    font-size: 35px;
+    color: rgb(241, 11, 11);
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.blog-left-notification ul{
+    list-style: none;
+}
+.blog-left-notification ul li{
+    font-size: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 6px;
+    background: #fafafa;
+    border-radius: 5px;
+}
+/* Subscribe section */
+.subscribe-section{
+    background-color: #f2f2f2;
+    padding: 60px;
+    margin-bottom: 25px;
+}
+
+.subscribe-section .input-field{
+    text-align: center;
+}
+
+.subsmail {
+	padding: 14px 0px;
+	text-align: left;
+	border: none;
+	border-bottom: 1px solid red;
+	font-size: 15px;
+	width: 600px; 
+}
+
+.subsribe {
+	padding: 13px 0px;
+	margin-left: -4px;
+	border: 1px solid red;
+	font-size: 17px;
+	background-color: red;
+    transition: .5s; 
+	color: white; 
+	width: 200px;
+} 
+.subsribe:hover{
+    background-color: white;
+    color: #000;
+    border: 1px solid red;
+}
+
+/*Footer Section*/
+.footer{
+    
+}
+.footer-content{
+    background: #000;
+    color: #fff;
+    padding: 15px;
+}
+.footer-content p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-icon{
+   
+    background-color: #000;
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-icon .Social-Menu{ 
+    text-align: center; 
+}
+.footer-icon .Social-Menu li{
+    display: inline-block;
+}
+.footer-icon .Social-Menu li a{
+    color: #1c7ee6b8;
+    font-size: 35px;
+    margin-left: 15px;
+    transition: .5s;
+}
+.footer-icon .Social-Menu li a:hover{
+    color: rgba(231, 231, 21, 0.735);
+}
